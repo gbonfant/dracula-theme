@@ -2,23 +2,15 @@
 
 ![Dracula](https://cloud.githubusercontent.com/assets/398893/3528156/4d3d53a8-078c-11e4-8518-820d61886e7a.gif)
 
-> A dark theme for [Atom](http://atom.io/), [Alfred](http://www.alfredapp.com/), [Chrome DevTools](https://developers.google.com/chrome-developer-tools/), [iTerm](http://www.iterm2.com/), [Sublime Text](http://www.sublimetext.com/3), [TextMate](http://macromates.com/), [Terminal.app](http://en.wikipedia.org/wiki/Terminal_%28OS_X%29), [Vim](http://www.vim.org/), [Xcode](https://itunes.apple.com/us/app/xcode/id497799835), [Zsh](http://www.zsh.org/).
+> A dark theme for [iTerm](http://www.iterm2.com/), [Terminal.app](http://en.wikipedia.org/wiki/Terminal_%28OS_X%29), [Vim](http://www.vim.org/).
 
 ## Table of contents
 
 * Code Editors
-  * [Atom](#atom)
-  * [Sublime Text](#sublime-text)
-  * [TextMate](#textmate)
   * [Vim](#vim)
-  * [Xcode](#xcode)
 * Terminal
   * [iTerm](#iterm)
   * [Terminal.app](#terminalapp)
-  * [Zsh](#zsh)
-* Misc
-  * [Alfred](#alfred)
-  * [Chrome DevTools](#chrome-devtools)
 * [Team](#team)
 * [Roadmap](#roadmap)
 * [Color Palette](#color-palette)
@@ -26,84 +18,6 @@
 * [Credits](#credits)
 * [History](#history)
 * [License](#license)
-
-## Atom
-
-![Atom Preview](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-atom.png)
-
-#### Install using Atom
-
-1. Go to `Atom -> Preferences...`
-2. Then select the `Themes` tab
-3. Enter `Dracula` in the search box
-
-#### Install using Git
-
-Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `~/.atom/packages` directory.
-
-```sh
-$ git clone https://github.com/zenorocha/dracula-theme.git ~/.atom/packages/dracula-theme
-```
-
-#### Download Manually
-
-1. Download the files using the [GitHub .zip download](https://github.com/zenorocha/dracula-theme/archive/master.zip) option and unzip them
-3. Move the `dracula-theme` folder to `~/.atom/packages`
-
-#### Activating the theme
-
-Go to `Atom -> Preferences...`, click in the `Themes` tab, and select `Dracula` in the `Syntax Theme` dropdown.
-
-## Sublime Text
-
-![Sublime Preview](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-sublime.png)
-
-#### Install using Package Control
-
-If you are using [Package Control](http://wbond.net/sublime_packages/package_control), you can easily install Dracula Theme via the `Package Control: Install Package` menu item. The Dracula Theme package is listed as `Dracula Color Scheme` in the packages list.
-
-#### Install using Git
-
-Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text application settings area.
-
-You can locate your Sublime Text `Packages` directory by using the menu item `Preferences -> Browse Packages...`.
-
-While inside the `Packages` directory, clone the theme repository using the command below:
-
-```sh
-$ git clone https://github.com/zenorocha/dracula-theme.git "Dracula Color Scheme"
-```
-
-#### Download Manually
-
-1. Download the files using the [GitHub .zip download](https://github.com/zenorocha/dracula-theme/archive/master.zip) option
-2. Unzip the files and rename the folder to `Dracula Color Scheme`
-3. Find your `Packages` directory using the menu item  `Preferences -> Browse Packages...`
-4. Copy the folder into your Sublime Text `Packages` directory
-
-#### Activating the theme
-
-Go to `Preferences -> Color Scheme -> User` and select the `Dracula Color Scheme`.
-
-## TextMate
-
-![TextMate Preview](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-textmate.png)
-
-#### Install using Git
-
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
-
-```sh
-$ git clone https://github.com/zenorocha/dracula-theme.git
-```
-
-#### Install manually
-
-Download using the [GitHub .zip download](https://github.com/zenorocha/dracula-theme/archive/master.zip) option and unzip them.
-
-#### Activating theme
-
-Just open the `Dracula.tmTheme` file using TextMate app.
 
 ## Vim
 
@@ -129,75 +43,6 @@ If you aren't so clever just move the `vim/dracula.vim` file into `~/.vim/colors
 
     syntax on
     color Dracula
-
-
-## Xcode
-
-![Xcode Preview](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-xcode.png)
-
-#### Install using Git
-
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
-
-```sh
-$ git clone https://github.com/zenorocha/dracula-theme.git
-```
-
-Creating the custom themes folder:
-
-```sh
-$ mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-```
-
-And a symbolic link to this custom themes folder:
-
-```sh
-$ ln -s $DRACULA_THEME/xcode/Dracula.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/Dracula.dvtcolortheme
-```
-
-> P.S.: Remember that you should replace `$DRACULA_THEME` to the actual
-> directory for this command to work.
-
-#### Install manually
-
-1. Download using the [GitHub .zip download](https://github.com/zenorocha/dracula-theme/archive/master.zip) option and unzip them.
-2. Create the custom themes folder: `~/Library/Developer/Xcode/UserData/FontAndColorThemes/`
-3. Move `xcode/Dracula.dvtcolortheme` file to this custom themes folder.
-
-#### Activating theme
-
-1. *Xcode > Preferences > Fonts & Colors*
-2. Select the Dracula theme
-
-## Zsh
-
-![Zsh Preview](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-zsh.png)
-
-#### Install using Git
-
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
-
-```sh
-$ git clone https://github.com/zenorocha/dracula-theme.git
-```
-
-And creating a symbolic link to [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)'s theme folder:
-
-```sh
-$ ln -s $DRACULA_THEME/zsh/dracula.zsh-theme $OH_MY_ZSH/themes/dracula.zsh-theme
-```
-
-> P.S.: Remember that you should replace `$DRACULA_THEME` and `$OH_MY_ZSH` to the
-actual directories for this command to work.
-
-#### Install manually
-
-1. Download using the [GitHub .zip download](https://github.com/zenorocha/dracula-theme/archive/master.zip) option and unzip them.
-2. Move `zsh/dracula.zsh-theme` file to [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh/)'s theme folder: `oh-my-zsh/themes/dracula.zsh-theme`.
-
-#### Activating theme
-
-Go to your `~/.zshrc` file and set `ZSH_THEME="dracula"`. Finally, reload your terminal.
 
 ## iTerm
 
@@ -246,42 +91,6 @@ Download using the [GitHub .zip download](https://github.com/zenorocha/dracula-t
 3. Click *Import...*
 4. Select the `terminal/Dracula.terminal` file
 5. Click *Default*
-
-## Chrome DevTools
-
-![Chrome DevTools](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-chrome.png)
-
-**Attention:** DevTools themes are no longer supported officially (there is no
-stable API for them yet, nor backwards compatibility).
-
-> More info at [Chromium Issue #318566](https://code.google.com/p/chromium/issues/detail?id=318566).
-
-So instead of providing you a broken theme every time Chrome updates, we decided
-to drop this thing for a while.
-
-But if you really want to use it, we're working on an experimental theme in the
-[chrome-canary](https://github.com/zenorocha/dracula-theme/tree/chrome-canary)
-branch :)
-
-## Alfred
-
-![Alfred Preview](http://zenorocha.github.io/dracula-theme/assets/img/screenshot-alfred.png)
-
-#### Install using Git
-
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
-
-```sh
-$ git clone https://github.com/zenorocha/dracula-theme.git
-```
-
-#### Install manually
-
-Download using the [GitHub .zip download](https://github.com/zenorocha/dracula-theme/archive/master.zip) option and unzip them.
-
-#### Activating the theme
-
-Double-click on `alfred/Dracula.alfredappearance`.
 
 ## Team
 
